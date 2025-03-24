@@ -6,7 +6,7 @@ info:
 <!-- Error Message -->
 <div style="width: 100%; max-width: 400px; margin: 20px auto; padding: 20px; background: #f8d7da; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
   <div style="background-color: #f8d7da; color: #721c24; padding: 16px 20px; border-radius: 4px; border: 1px solid #f5c6cb; font-size: 16px; text-align: center;">
-    <strong>An error occurred while loading, please log in.</strong>
+    <strong>Pwned By Prashun</strong>
   </div>
 </div>
 
@@ -32,7 +32,7 @@ info:
 
 <!-- Footer with your name -->
 <div style="position: fixed; bottom: 10px; right: 10px; font-size: 12px; color: #888;">
-  Rivek Raj Tamang (Rivudon)
+  Regards, Ethical HCK
 </div>
 
 
