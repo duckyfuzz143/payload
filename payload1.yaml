@@ -35,21 +35,6 @@ info:
   <strong>Hacked by Prashun | Access Denied</strong>
 </div>
 
-<!-- Glitch Animation Effect -->
-<div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); font-size: 36px; color: #ff0000; font-family: 'Courier New', monospace; animation: glitch 1s infinite;">
-  <span style="position: relative; z-index: 1;">ERROR 404</span>
-  <span style="position: absolute; left: -2px; text-shadow: -2px 0 red;">ERROR 404</span>
-  <span style="position: absolute; left: 2px; text-shadow: 2px 0 blue;">ERROR 404</span>
-</div>
-
-<style>
-  @keyframes glitch {
-    0% { transform: translate(-50%, -50%) skew(0deg); }
-    50% { transform: translate(-50%, -50%) skew(3deg); }
-    100% { transform: translate(-50%, -50%) skew(0deg); }
-  }
-</style>
-
   '
 paths:
   /:
