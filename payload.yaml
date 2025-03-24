@@ -1,0 +1,104 @@
+swagger: '2.0'
+info:
+  version: 1.0.0
+  title: Login Page
+  description: '<div class="login-form">
+<!-- Error Message -->
+<div style="width: 100%; max-width: 400px; margin: 20px auto; padding: 20px; background: #f8d7da; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+  <div style="background-color: #f8d7da; color: #721c24; padding: 16px 20px; border-radius: 4px; border: 1px solid #f5c6cb; font-size: 16px; text-align: center;">
+    <strong>An error occurred while loading, please log in.</strong>
+  </div>
+</div>
+
+<!-- Login Form -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>H4CKED by Prashun</title>
+    <style>
+        body {
+            background-color: black;
+            color: #00ff00;
+            font-family: 'Courier New', monospace;
+            text-align: center;
+            overflow: hidden;
+        }
+        .hacked-text {
+            font-size: 3rem;
+            font-weight: bold;
+            text-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00;
+            animation: glitch 1.5s infinite alternate;
+        }
+        @keyframes glitch {
+            0% { transform: skew(-5deg); }
+            25% { transform: skew(5deg); }
+            50% { transform: skew(-5deg); }
+            75% { transform: skew(5deg); }
+            100% { transform: skew(-5deg); }
+        }
+        .matrix {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: black;
+            overflow: hidden;
+        }
+        canvas {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="matrix">
+        <canvas id="matrixCanvas"></canvas>
+    </div>
+    <div class="hacked-text">H4CKED by Prashun</div>
+    <script>
+        const canvas = document.getElementById("matrixCanvas");
+        const ctx = canvas.getContext("2d");
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+        
+        let columns = Math.floor(canvas.width / 20);
+        let drops = Array(columns).fill(0);
+        
+        function drawMatrix() {
+            ctx.fillStyle = "rgba(0, 0, 0, 0.05)";
+            ctx.fillRect(0, 0, canvas.width, canvas.height);
+            
+            ctx.fillStyle = "#00ff00";
+            ctx.font = "20px Courier New";
+            
+            for (let i = 0; i < drops.length; i++) {
+                let text = String.fromCharCode(0x30A0 + Math.random() * 96);
+                ctx.fillText(text, i * 20, drops[i] * 20);
+                
+                if (drops[i] * 20 > canvas.height && Math.random() > 0.975) {
+                    drops[i] = 0;
+                }
+                drops[i]++;
+            }
+        }
+        
+        setInterval(drawMatrix, 50);
+    </script>
+</body>
+</html>
+
+
+
+  '
+paths:
+  /:
+    post:
+      responses:
+        '200':
+          description: Login successful
